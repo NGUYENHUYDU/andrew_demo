@@ -3,8 +3,7 @@ package com.andrew.sona.service.mapper;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import com.andrew.sona.domain.User;
-import com.andrew.sona.service.dto.AdminUserDTO;
-import com.andrew.sona.service.dto.UserDTO;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;

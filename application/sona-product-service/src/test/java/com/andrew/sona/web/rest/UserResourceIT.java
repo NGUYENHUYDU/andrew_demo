@@ -2,18 +2,12 @@ package com.andrew.sona.web.rest;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.hasItem;
-import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.csrf;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 import com.andrew.sona.IntegrationTest;
-import com.andrew.sona.domain.Authority;
 import com.andrew.sona.domain.User;
-import com.andrew.sona.repository.UserRepository;
 import com.andrew.sona.repository.search.UserSearchRepository;
 import com.andrew.sona.security.AuthoritiesConstants;
-import com.andrew.sona.service.dto.AdminUserDTO;
-import com.andrew.sona.service.mapper.UserMapper;
+
 import java.time.Instant;
 import java.util.*;
 import java.util.function.Consumer;
@@ -24,10 +18,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.cache.CacheManager;
-import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.transaction.annotation.Transactional;
 
 /**
  * Integration tests for the {@link UserResource} REST controller.

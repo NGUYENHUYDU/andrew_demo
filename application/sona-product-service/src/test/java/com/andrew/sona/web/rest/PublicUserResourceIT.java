@@ -6,9 +6,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 import com.andrew.sona.IntegrationTest;
-import com.andrew.sona.config.TestSecurityConfiguration;
 import com.andrew.sona.domain.User;
-import com.andrew.sona.repository.UserRepository;
 import com.andrew.sona.repository.search.UserSearchRepository;
 import com.andrew.sona.security.AuthoritiesConstants;
 import javax.persistence.EntityManager;
